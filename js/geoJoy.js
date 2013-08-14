@@ -9,7 +9,7 @@ function loadItem(key, name, type, lat, lng) {
 	var capType = type.charAt(0).toUpperCase() + type.slice(1);
 	$('#itemListName').after('<li class="itemList_li">'+name+'</li>');
 	$('#itemListType').after('<li class="itemList_li">'+capType+'</li>');
-	imageURL = "http://maps.google.com/maps/api/staticmap?sensor=false&center=" + lat + ',' + lng+"&zoom=15&size=280x280&markers=color:blue|" + lat + ',' + lng;
+	imageURL = "http://maps.google.com/maps/api/staticmap?sensor=false&center=" + lat + ',' + lng+"&zoom=15&size=280x280&markers=color:red|" + lat + ',' + lng;
 	$('#itemListMap').append('<img src="'+imageURL+'" id="itemList_map" alt="Google Map">');
 	document.getElementById('itemKey').value = key;
 	$('#item2Del').append(document.createTextNode(name));
@@ -77,7 +77,7 @@ function handlePosition(position) {
 	var itemId = dateId.getTime();
 	document.getElementById('itemId').value = itemId;
 	document.getElementById('coordinates').value = lat + ',' + lng;
-	var imageURL = "http://maps.google.com/maps/api/staticmap?sensor=true&center=" + lat + ',' + lng+"&zoom=15&size=260x100&markers=color:blue|" + lat + ',' + lng;
+	var imageURL = "http://maps.google.com/maps/api/staticmap?sensor=true&center=" + lat + ',' + lng+"&zoom=16&size=260x260&maptype=roadmap&markers=color:red|" + lat + ',' + lng;
 	$('#mapImage').empty();
 	$('#mapImage').append('<img src="'+imageURL+'" alt="Google Map">');
 	if (document.getElementById('clearSaveButtons').style.display === 'none') {
