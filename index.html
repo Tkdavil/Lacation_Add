@@ -1,8 +1,3 @@
-<!--
-geoJoy by Claim Soluciones, S.C.P. is licensed under a GNU General Public License, version 3 (GPL v3).
-Permissions beyond the scope of this license may be available at http://www.claimsoluciones.com.
-License Info: http://www.opensource.org/licenses/gpl-3.0.html
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,9 +44,9 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 		<header data-nobackbtn="true" data-role="header">
 		<center><img src="img/title.png"></center>
 		</header>
-		<div data-role="content" style=" background-color:#CCCCCC">
+		<div data-role="content" class="well-large" style="color:#09C">
 			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
-				<li data-icon="map-mark">
+				<li data-icon="map-mark" style="background-color:#03C">
 					<a href="#add" onclick="currentLoc()" title="View location">Add Location Me</a>
 				</li>
 				<li data-icon="grid">
@@ -60,31 +55,14 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 				</li>
              
 			</ul>
-		    <p>
-	       <br>
-           <br>
-           <br>
-           <br>
-		     <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p><p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p><p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-		      <br>
-		      <br>
-		      <br>
-		      <br>
-	      </p>
-            </div>
+		</div>
 		</div>
 	
 	<div data-role="page" id="loc_mgmt">
 		<header data-nobackbtn="true" data-role="header" name="header">
 			<center><img src="img/title.png"></center>
 		</header>
-		<div data-role="content" id="content" style=" background-color:#CCCCCC">
+		<div data-role="content" id="content" >
 			<ul data-role="listview" id="locationItems" data-inset="true" data-theme="c" data-dividertheme="a">
 				<li data-role="list-divider"><h4 style="color:#CF0">Location</h4></li>
 				<li data-role="list-divider" class="itemsTitle" id="architecture">Architecture</li>
@@ -106,16 +84,7 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 			<div data-type="horizontal" data-role="controlgroup">
             
 				<a href="#home" title="Back home" data-role="button" data-icon="refresh" class="btn-info" data-transition="slide" >Back&nbsp;</a><a href="#clear" data-icon="delete" title="Delete all entries" data-role="button" class="btn-danger">Delete All</a></div>
-			<p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+
         </div>
 	</div>
 	
@@ -123,7 +92,7 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 		<header data-nobackbtn="true" data-role="header">
 			<center><img src="img/title.png"></center>
 		</header>
-		<div data-role="content" style=" background-color:#CCCCCC">
+		<div data-role="content" >
 			
 			<h4>Delete All Location<br></h4>
 		  <p>&nbsp;</p>
@@ -154,11 +123,11 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 		</div>
 	</div>
 	
-	<div data-role="page" id="add" style=" background-color:#CCCCCC">
+	<div data-role="page" id="add" >
 		<header data-nobackbtn="true" data-role="header">
 			<center><img src="img/title.png"></center>
 		</header>
-		<div data-role="content" id="geo_content" style=" background-color:#CCCCCC">
+		<div data-role="content" id="geo_content">
 			<div id="toolbar" data-role="controlgroup" data-type="horizontal"><a href="#home" title="Back home" data-role="button" data-icon="refresh" data-theme="c" class="toolbar_link" data-transition="slide">Back</a></div>
 			<label for="nameInput">Location name:</label>
 			<input type="text" name="nameInput" id="nameInput">
@@ -205,7 +174,7 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 		<header data-nobackbtn="true" data-role="header">
 			<center><img src="img/title.png"></center>
 		</header>
-		<div data-role="content" id="itemContent"style=" background-color:#CCCCCC">
+		<div data-role="content" id="itemContent">
 			<div id="toolbar" data-role="controlgroup" data-type="horizontal"><a href="#home" title="Back home" data-role="button" data-icon="refresh" data-theme="c" class="toolbar_link" data-transition="slide">Back</a></div>
 			<ul data-role="listview" data-theme="c" data-dividertheme="a">
 				<li data-role="list-divider" id="itemListType">Type</li>
@@ -223,7 +192,7 @@ License Info: http://www.opensource.org/licenses/gpl-3.0.html
 		<header data-nobackbtn="true" data-role="header">
 			<center><img src="img/title.png"></center>
 		</header>
-		<div data-role="content" style=" background-color:#CCCCCC">
+		<div data-role="content" >
 			<div id="toolbar" data-role="controlgroup" data-type="horizontal">
 			  <p>&nbsp;</p>
 			  <p>&nbsp;</p>
